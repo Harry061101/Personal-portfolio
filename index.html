@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariharan R - Data Analytics Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 50px 0;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .section {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+        }
+
+        /* Additional UI styling */
+        .header-content a {
+            margin: 10px;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .header-content a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .header-content a i {
+            margin-right: 5px;
+        }
+        
+        /* Add a background gradient */
+        body {
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Hariharan R</h1>
+            <h2>Data Analytics</h2>
+            <h2>BE Computer Science and Engineering</h2>
+            <a href="https://www.linkedin.com/in/your-linkedin-url" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Harry061101" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Enthusiastic and detail-oriented recent graduate with a strong foundation in data analysis, statistics, and data visualization, seeking an entry-level Data Analyst position to apply analytical skills, learn from experienced professionals, and contribute to making data-driven decisions that drive organizational success. Dedicated to leveraging academic knowledge and passion for data to provide valuable insights and assist in achieving business objectives.</p>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <li>Data analytics in Great Lakes Institute of Management, 2024</li>
+            <li>BE - Computer Science and Engineering (CSE) in  K.S.Rangasamy College Of Technology with 87.80%, 2023</li>
+            <li>12th Stdin  S.K.T Matriculation Higher Secondary School with 68.83%, 2019</li>
+            <li>10th Std in Model School with 84%, 2017</li>
+        </section>
+
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Acquiring Data - <strong>NASSCOM</strong></li>
+                <li>Introduction to Artificial Intelligence - <strong> Great Learning</strong></li>
+                <li>Introduction to Cloud Computing on AWS - <strong>Udemy</strong></li>
+                <li>Learnathon 2020 & 2021 - <strong>ICT Academy</strong></li>
+                <li>AI on Cloud -<strong> Great Learning</strong></li>
+                <li>Skilledge 2021 - <strong> ICT Academy</strong></li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>EDA & Data Preprocessing on Google App Store Rating Dataset</strong>
+                    <p>Approach: Train-Test Split and Cross-Validation: Begin by dividing the Google App Store Rating Dataset into training and testing sets, using techniques like k-fold cross-validation to iteratively assess the model's performance on different subsets, ensuring generalizability. Feature Scaling, Encoding, and Imputation: Preprocess the data by standardizing numerical features, encoding categorical variables, and handling missing values. This prepares the dataset for machine learning models, ensuring uniformity and completeness during both training and testing phases.</p>
+                    <p>Tools: Python (Jupyter Notebook)</p>
+                    <p>Key Skills: Train-Test Split, Cross-Validation, Feature Scaling, Encoding, Data Imputation, Outlier Detection, Data Balancing.</p>
+                </li>
+                <li>
+                    <strong>Banana Leaf Disease Detection using Advanced Convolutional Neural Network</strong>
+                    <p>Approach: Train a Faster RCNN model: Build a dataset of banana leaf images with labeled disease types (sigatoka, bacterial wilt, pestalotiopsis). Train the Faster RCNN model on your dataset to distinguish healthy leaves from diseased ones and identify specific disease types. Deploy and use the model: Capture new banana leaf images with a camera or smartphone. Run the trained Faster RCNN model on the captured image to detect and classify any present disease. This is a simplified overview, and additional steps might be necessary depending on your specific requirements, such as data preprocessing, hyperparameter tuning, and post-processing of the model's output.</p>
+                    <p>Tools: Python (Jupyter Notebook)</p>
+                    <p>Key Skills: Data Splitting, Validation and Hyperparameter Tuning, Testing and Evaluation.</p>
+                </li>
+                <li>
+                    <strong>Film Rental Management System with MySQL</strong>
+                    <p>Approach: Database Design and Normalization: Design MySQL tables for films, customers, and rentals, ensuring normalization. Establish relationships and create an efficient schema to maintain data integrity. Query Optimization and UI Integration: Optimize SQL queries for rental operations, implement user-friendly interfaces for renting/returning films, and develop views for streamlined information retrieval, enhancing overall system performance.</p>
+                    <p>Tools: MySQL (Workbench)</p>
+                    <p>Key Skills: Joins, Subqueries, SQL (Operator, Functions)</p>
+                </li>
+                <li>
+                    <strong>Health Insurance Claim</strong>
+                    <p>Approach: Exploratory Data Analysis (EDA): Begin by conducting EDA on the Health Insurance claim data to understand its patterns, distributions, and relationships. Identify key variables for analysis and gain insights to inform data preprocessing. Data Editing for Dummy Variables in MS Excel: Edit the dataset by converting categorical variables into dummy variables in MS Excel, ensuring each category is represented as a binary column. This process facilitates the incorporation of categorical information into machine learning models.</p>
+                    <p>Tools: MS Excel</p>
+                    <p>Key Skills: EDA using pivot table and charts, Statistical techniques such as descriptive statistics, covariance, correlation, Regression Analysis [using Data Analysis tool pack]</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>MS Excel: Data cleaning, Data analysis, Data Visualization, VLOOKUP, HLOOKUP, Data aggregation using Pivot Table, Statistical analysis and Regression.</li>
+                <li>Statistical Methods: Hypothesis Testing, ANOVA Test, T Test, Z Test</li>
+                <li>Programming Language: Python</li>
+                <li>Libraries: NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn.</li>
+                <li>Machine Learning: Supervised Learning - Linear Regression and Logistic Regression.</li>
+                <li>MySQL: RDBMS, DDL, DML, DQL, SQL (Operator, Functions), Joins, Subqueries, Windows function.</li>
+                <li>Business Intelligence: Tableau.</li>
+                <li>Soft Skills: Leadership, Planning and Teamwork, Positive attitude and positive thinking, Data analysis and insights.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hariharan R. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
